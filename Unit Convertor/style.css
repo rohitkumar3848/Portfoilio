@@ -1,0 +1,124 @@
+body {
+    padding-top: 20px;
+    background-image:url(./images/bg1.jpg);
+    margin:0;
+    padding: 0;
+
+  }
+  h1 {
+    color: black;
+    font-size: 35px;
+		color: orange;	
+    text-shadow: 2px 2px red;
+    font-family: cursive;
+  }
+  .select{
+    cursor:pointer;
+  }
+  .convertor{
+    background-color: lightcyan;
+    height: 400px;
+    width: 50%;
+    border-radius: 30px;
+		border: 3px solid black;
+    margin-top: 130px;
+    margin-left: 350px;
+    transition: transform 0.5s;
+  }
+  .convertor:hover{
+    transform: scale(1.1);
+  }
+  .convertor-upper{
+    padding-top: 30px;
+  }
+  .converter-wrapper {
+    margin: 0 auto;
+    max-width: 600px;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+
+  }
+  
+  .converter-wrapper input {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    height: 40px;
+    box-sizing: border-box;
+  }
+  
+  .converter-wrapper span {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    border-radius: 0px;
+		border: 2px solid black;
+  }
+  
+  .converter-wrapper span select {
+    background-color: #263648;
+    color: #fff;
+    font-size: inherit;
+    padding: 10px;
+    width: 100%;
+    border: 0;
+    margin: 0;
+    border-radius: 0px;
+    text-indent: 0.01px;
+    text-overflow: '';
+  }
+  
+  .converter-wrapper span::before,
+  .converter-wrapper span::after {
+    content: "";
+    position: absolute;
+    pointer-events: none;
+  }
+  
+  .converter-wrapper span::after { /*  Custom dropdown arrow */
+    content: "\25BC";
+    height: 1em;
+    font-size: .625em;
+    line-height: 1;
+    right: 1.5em;
+    top: 50%;
+    margin-top: -.5em;
+    color: #131B24;
+  }
+  
+  .converter-wrapper span::before { /*  Custom dropdown arrow cover */
+    width: 2.5em;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 0;
+    background-color: #263648;
+  }
+  
+  .converter-side-a,
+  .converter-side-b {
+    float: left;
+    box-sizing: border-box;
+    width: 45%;
+    margin-top:70px;
+  }
+  .converter-equals {
+    float: left;
+    box-sizing: border-box;
+    width: 10%;
+    color: #FFF;
+    font-size: 2.4em;
+    line-height: 0;
+    text-align: center;
+  }
+  
+  .converter-side-a {
+    padding-right: 10px;
+  }
+  .converter-side-b {
+    padding-left: 10px;
+  }
